@@ -15,6 +15,10 @@
 		7AAAAC752A72C81F00CD026D /* XCAFootballDataClient in Frameworks */ = {isa = PBXBuildFile; productRef = 7AAAAC742A72C81F00CD026D /* XCAFootballDataClient */; };
 		7AAAAC782A72C8AE00CD026D /* StandingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAAAC772A72C8AE00CD026D /* StandingsTableView.swift */; };
 		7AAAAC7B2A72CA8E00CD026D /* StandingsTableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAAAC7A2A72CA8E00CD026D /* StandingsTableObservable.swift */; };
+		7AAAAC7D2A72CBB900CD026D /* FetchPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAAAC7C2A72CBB900CD026D /* FetchPhase.swift */; };
+		7AAAAC852A73745B00CD026D /* scorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AAAAC832A73745B00CD026D /* scorers.json */; };
+		7AAAAC862A73745B00CD026D /* standings.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AAAAC842A73745B00CD026D /* standings.json */; };
+		7AAAAC882A73748800CD026D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAAAC872A73748800CD026D /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		7AAAAC6C2A72C65C00CD026D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7AAAAC772A72C8AE00CD026D /* StandingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableView.swift; sourceTree = "<group>"; };
 		7AAAAC7A2A72CA8E00CD026D /* StandingsTableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableObservable.swift; sourceTree = "<group>"; };
+		7AAAAC7C2A72CBB900CD026D /* FetchPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhase.swift; sourceTree = "<group>"; };
+		7AAAAC832A73745B00CD026D /* scorers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scorers.json; sourceTree = "<group>"; };
+		7AAAAC842A73745B00CD026D /* standings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = standings.json; sourceTree = "<group>"; };
+		7AAAAC872A73748800CD026D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +69,15 @@
 		7AAAAC602A72C65800CD026D /* FootballVision */ = {
 			isa = PBXGroup;
 			children = (
+				7AAAAC7E2A73738800CD026D /* Stubs */,
 				7AAAAC792A72CA4C00CD026D /* Observables */,
 				7AAAAC762A72C88100CD026D /* Views */,
 				7AAAAC652A72C65800CD026D /* FootballVisionApp.swift */,
 				7AAAAC672A72C65800CD026D /* ContentView.swift */,
 				7AAAAC692A72C65C00CD026D /* Assets.xcassets */,
 				7AAAAC6B2A72C65C00CD026D /* Preview Content */,
+				7AAAAC7C2A72CBB900CD026D /* FetchPhase.swift */,
+				7AAAAC872A73748800CD026D /* Utility.swift */,
 			);
 			path = FootballVision;
 			sourceTree = "<group>";
@@ -101,6 +112,15 @@
 				7AAAAC7A2A72CA8E00CD026D /* StandingsTableObservable.swift */,
 			);
 			path = Observables;
+			sourceTree = "<group>";
+		};
+		7AAAAC7E2A73738800CD026D /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				7AAAAC832A73745B00CD026D /* scorers.json */,
+				7AAAAC842A73745B00CD026D /* standings.json */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +188,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AAAAC852A73745B00CD026D /* scorers.json in Resources */,
+				7AAAAC862A73745B00CD026D /* standings.json in Resources */,
 				7AAAAC6D2A72C65C00CD026D /* Preview Assets.xcassets in Resources */,
 				7AAAAC6A2A72C65C00CD026D /* Assets.xcassets in Resources */,
 			);
@@ -180,7 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AAAAC7D2A72CBB900CD026D /* FetchPhase.swift in Sources */,
 				7AAAAC782A72C8AE00CD026D /* StandingsTableView.swift in Sources */,
+				7AAAAC882A73748800CD026D /* Utility.swift in Sources */,
 				7AAAAC7B2A72CA8E00CD026D /* StandingsTableObservable.swift in Sources */,
 				7AAAAC682A72C65800CD026D /* ContentView.swift in Sources */,
 				7AAAAC662A72C65800CD026D /* FootballVisionApp.swift in Sources */,
