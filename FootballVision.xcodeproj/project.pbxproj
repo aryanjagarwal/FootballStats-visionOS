@@ -19,6 +19,7 @@
 		7AAAAC852A73745B00CD026D /* scorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AAAAC832A73745B00CD026D /* scorers.json */; };
 		7AAAAC862A73745B00CD026D /* standings.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AAAAC842A73745B00CD026D /* standings.json */; };
 		7AAAAC882A73748800CD026D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAAAC872A73748800CD026D /* Utility.swift */; };
+		7AEFD28E2A7B540800EA891F /* SVGImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7AEFD28D2A7B540800EA891F /* SVGImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AEFD28E2A7B540800EA891F /* SVGImageSwiftUI in Frameworks */,
 				7AAAAC642A72C65800CD026D /* RealityKitContent in Frameworks */,
 				7AAAAC752A72C81F00CD026D /* XCAFootballDataClient in Frameworks */,
 			);
@@ -142,6 +144,7 @@
 			packageProductDependencies = (
 				7AAAAC632A72C65800CD026D /* RealityKitContent */,
 				7AAAAC742A72C81F00CD026D /* XCAFootballDataClient */,
+				7AEFD28D2A7B540800EA891F /* SVGImageSwiftUI */,
 			);
 			productName = FootballVision;
 			productReference = 7AAAAC5E2A72C65800CD026D /* FootballVision.app */;
@@ -173,6 +176,8 @@
 			mainGroup = 7AAAAC552A72C65800CD026D;
 			packageReferences = (
 				7AAAAC732A72C81F00CD026D /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */,
+				7AEFD28B2A7B530300EA891F /* XCRemoteSwiftPackageReference "SVGImageSwiftUI" */,
+				7AEFD28C2A7B540800EA891F /* XCRemoteSwiftPackageReference "SVGImageSwiftUI" */,
 			);
 			productRefGroup = 7AAAAC5F2A72C65800CD026D /* Products */;
 			projectDirPath = "";
@@ -417,6 +422,22 @@
 				minimumVersion = 0.1.0;
 			};
 		};
+		7AEFD28B2A7B530300EA891F /* XCRemoteSwiftPackageReference "SVGImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SVGImageSwiftUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7AEFD28C2A7B540800EA891F /* XCRemoteSwiftPackageReference "SVGImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SVGImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -428,6 +449,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7AAAAC732A72C81F00CD026D /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */;
 			productName = XCAFootballDataClient;
+		};
+		7AEFD28D2A7B540800EA891F /* SVGImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AEFD28C2A7B540800EA891F /* XCRemoteSwiftPackageReference "SVGImageSwiftUI" */;
+			productName = SVGImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
