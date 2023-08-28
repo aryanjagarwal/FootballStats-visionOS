@@ -116,7 +116,11 @@ struct StandingsTableView: View {
         }
         .toolbar {
             ToolbarItem(placement: .bottomOrnament) {
-                Picker("Filter Options")
+                Picker("Filter Options", selection: $vm.selectedFilter) {
+                    ForEach(vm.filterOptions, id: \.self) { season in
+                        Text(" \(season.text) ")
+                    }
+                }.pickerStyle(.segmented)
             }
         }
     }
